@@ -2,10 +2,10 @@ body {
  text-align: center;
  background-color: white;
 }
-.searchbar input[type=submit] {
+form input[type=submit] {
  color: white;
  background-color: blueviolet;
- 
+
 }
 #watermark {
  margin: 0 auto;

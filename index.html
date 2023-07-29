@@ -10,13 +10,23 @@
 <body>
     <header>
         <h1>Welcome to Smarty Pants, Your Personal Pocket Dictionary!</h1>
-        <div class="searchbar">
-        <input type="text" placeholder="Search..">
-        <input type="submit">
-        </div>
+        <form>
+            <input type="text" placeholder="Search Words Here">
+            <input type="submit">
+        </form>
     </header>
     <div id="watermark">
     <img src="http://www.clipartbest.com/cliparts/yik/aBp/yikaBpknT.jpg" alt="smarty pants background">
-    </div> 
+    </div>
+    <dl>
+        <dt>Word</dt>
+        <dd id="word"></dd>
+    
+        <dt>Phonetics</dt>
+        <dd id="phonetics"></dd>
+    
+        <dt>Definition(s)</dt>
+        <dd id="meanings"></dd>
+    </dl>
 </body>
 </html>
