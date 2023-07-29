@@ -6,14 +6,16 @@ window.onload = (e) => {
   
       console.log(userInput)
   
-      fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/<word>=${userInput}`).then((data) => {
+      fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${userInput}`).then((data) => {
+        console.log(data.json)
         return data.json()
       }, (err) => {
         console.log(err, ' ERROR')
       }).then((info) => {
-        document.querySelector('#word').innerHTML = info.Word
-        document.querySelector('#phonetics').innerHTML = info.Phonetics
-        document.querySelector('#meanings').innerHTML = info.Meanings
+        console.log(info)
+        document.querySelector('#word').innerHTML = info[0].word;
+        document.querySelector('#phonetics').innerHTML = info[0].phonetic;
+        document.querySelector('#meanings').innerHTML = info[0].meanings[0].definitions[0].definition
       })
     })
   };
