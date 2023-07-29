@@ -1,12 +1,28 @@
 body {
  text-align: center;
- background-color: white;
+ /* background-color: bisque; */
 }
+
 form input[type=submit] {
  color: white;
  background-color: blueviolet;
-
+ padding: 15px 32px;
+ display: inline-block;
+ font-size: 16px;
+ border-radius: 4px;
 }
+
+form input[type=text] {
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+form input[type=submit]:hover {
+    background-color: rgb(86, 43, 226);
+}
+
 #watermark {
  margin: 0 auto;
  padding-top: 10px;
