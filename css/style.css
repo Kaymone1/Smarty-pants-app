@@ -38,7 +38,7 @@ form input[type=submit]:hover {
  background-position: center;
  background-repeat: no-repeat;
  position: relative;
- opacity: 0.2;
+ opacity: 0.1;
 }
 #word, #phonetics, #meanings {
     animation: datload 5s ease-in-out;
