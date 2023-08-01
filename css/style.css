@@ -25,7 +25,7 @@ form input[type=submit]:hover {
 
 .dictdata {
     position: absolute;
-    top: 160px;
+    top: 150px;
     left: 30px;
     text-align: left;
     font-size:xx-large;
@@ -40,3 +40,14 @@ form input[type=submit]:hover {
  position: relative;
  opacity: 0.2;
 }
+#word, #phonetics, #meanings {
+    animation: datload 5s ease-in-out;
+}
+@keyframes datload {
+    0%   { 
+    transform: translateX(200%); 		
+    }
+    100% { 
+    transform: translateX(0%); 
+    }
+   }
