@@ -1,14 +1,35 @@
+// Function to fetch a random word of the day from the API
+function fetchWordOfTheDay() {
+    fetch('https://api.dictionaryapi.dev/api/v2/entries/en/random')
+      .then((data) => {
+        return data.json();
+      })
+      .then((info) => {
+        document.querySelector('#word-of-day').innerHTML = info[0].word;
+        document.querySelector('#phonetics-of-day').innerHTML = info[0].phonetic;
+        document.querySelector('#meanings-of-day').innerHTML = info[0].meanings[0].definitions[0].definition;
+        console.log(info)
+      })
+      //display any rejections of my info pulling
+      .catch((err) => {
+        console.log(err, 'ERROR');
+      });
+  }
+
 //ensure nothing happens until window loads, event listener will start when html is ready
 window.onload = (e) => {
     //create the "click"
     document.querySelector('form').addEventListener('submit', (e) => {
       e.preventDefault() //stops auto refresh when calling for info loading
        
+      //calling my random word pulling function
+     fetchWordOfTheDay();
+
       //create variable to hold the text that goes into search bar
       const userInput = document.querySelector('input[type="text"]').value
   //console log for proof to make sure computer is taking user input
       console.log(userInput)
-
+      
   // Fetch the data from  dictionary API by using the user input
       fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${userInput}`).then((data) => {
         console.log(data.json)
