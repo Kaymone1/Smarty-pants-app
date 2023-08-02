@@ -42,6 +42,7 @@ form input[type=submit]:hover {
     font-size:xx-large;
     font-weight: bold;
 }
+
 #watermark {
  margin: 0 auto;
  padding-top: 90px;
@@ -51,7 +52,7 @@ form input[type=submit]:hover {
  position: relative;
  opacity: 0.1;
 }
-#word, #phonetics, #meanings {
+#word, #phonetics, #meanings, #word-of-day, #phonetics-of-day, #meanings-of-day {
     animation: datload 5s ease-in-out;
 }
 @keyframes datload {
