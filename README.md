@@ -1,7 +1,7 @@
 # Smarty-pants-app
 My first class project using GitHub
 # About Me
-This is my mini dictionary program called "Smarty-Pants" that provides users with a small handheld full of thousands words dictionary... THEIR PHONES! (or tablet anything that uses internet). This app gives users a dictionary that is simple and easy to read. Simplicity is important to broaden my target audience. I need my grandmother to find this easy to use!
+This is my mini dictionary program called "Smarty-Pants" that provides users with a small handheld, full of thousands of words dictionary... THEIR PHONES! (or tablet anything that uses internet). This app gives users a dictionary that is simple and easy to read. Simplicity is important to broaden my target audience. I need my grandmother to find this easy to use!
 
 # Techniques used
 The app is based off a dictionary API that gives me a very large array of words, meanings, phonetics, etc. info of a regular dictionary.
