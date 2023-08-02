@@ -11,3 +11,5 @@ W3Schools and MDN was my obsessive reference for css and Javascript.
 # Unsolved Mysteries
 I couldn't figure out how to make the animations reset everytime the page loads new information with out refreshing the the tab.
 
+# App Website
+Here is the link to deploy app: https://main--magenta-semifreddo-61b887.netlify.app/
