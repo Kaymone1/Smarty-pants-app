@@ -18,4 +18,6 @@ http://www.clipartbest.com/cliparts/yik/aBp/yikaBpknT.jpg
 I couldn't figure out how to make the animations reset everytime the page loads new information with out refreshing the the tab. Also when I deployed on netlify my image doesnt show because of "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID" code. I'm assuming I needed permission but I'm not sure how that works yet.
 
 # App Website
-Here is the link to deploy app: https://main--magenta-semifreddo-61b887.netlify.app/
+Here is the link to deploy app: 
+
+https://admirable-beijinho-b0e61f.netlify.app/
